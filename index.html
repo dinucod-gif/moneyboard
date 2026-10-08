@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>MoneyBoard</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="topbar">
+    <h1>MoneyBoard</h1>
+    <nav class="tabs">
+      <button class="tab active" data-view="dashboard">Overview</button>
+      <button class="tab" data-view="accounts">Accounts</button>
+      <button class="tab" data-view="transactions">Activity</button>
+      <button class="tab" data-view="budgets">Budgets</button>
+    </nav>
+  </header>
+
+  <main id="main"></main>
+
+  <button class="fab" id="fab" aria-label="Add transaction">+</button>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
